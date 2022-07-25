@@ -1,0 +1,6 @@
+{{#if posts.length}}
+    {{#each posts as |post|}}
+        {{> post-info-mini post}}
+    {{/each}}
+{{/if}}
+<a href="/dashboard/new">+ New Post</a>

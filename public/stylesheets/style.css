@@ -1,0 +1,149 @@
+:root {
+    --primary-color: #d9ead3;
+    --secondary-color: #231010;
+    --tertiary-color: #a7a7a7;
+    --quaternary-color: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 24px 32px;
+}
+
+nav {
+    padding-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 324px;
+}
+
+nav a, nav button {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: large;
+}
+
+h1 {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 5px 5px var(--tertiary-color);
+    padding: 6px 18px;
+    width: fit-content;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: calc(100vh - 164.8px);
+    padding: 12px 32px;
+}
+
+article {
+    background-color: var(--secondary-color);
+    border: 3px solid var(--secondary-color);
+    margin: 12px 0;
+}
+
+.title {
+    color: var(--tertiary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+    padding: 12px 16px;
+}
+
+.title a {
+    color: var(--tertiary-color);
+}
+
+.body {
+    background-color: var(--primary-color);
+    padding: 12px 16px;
+}
+
+h2 {
+    font-size: 1.25em;
+    width: fit-content;
+}
+
+form {
+    font-size: 1.25em;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+form input {
+    border: 1px solid var(--tertiary-color);
+    border-radius: 2px;
+    height: 36px;
+    padding: 0 10px;
+}
+
+form button {
+    background-color: var(--quaternary-color);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+    padding: 8px;
+    width: 100%;
+}
+
+form button:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+a.post {
+    background-color: var(--quaternary-color);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 100%;
+}
+
+main a:not(main article a):last-child {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-size: 1.5em;
+    padding: 12px 16px;
+    position: fixed;
+    bottom: 20px;
+}
+
+textarea {
+    min-height: 100px;
+    padding: 0 3px;
+}
