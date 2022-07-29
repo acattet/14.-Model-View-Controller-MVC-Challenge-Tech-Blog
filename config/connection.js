@@ -1,8 +1,10 @@
 const Sequelize = require("sequelize");
-
+//this dude caused me such much trouble for no reason
 require("dotenv").config();
 
 let sequelize;
+
+//add jawsdb, dont know why it made me add a credit card, kinda dumb
 
 if(process.env.JAWSDB_URL) {
     sequelize = new Sequelize(process.env.JAWSDB_URL);

@@ -1,6 +1,6 @@
 async function deleteFormHandler(event) {
     event.preventDefault();
-
+//same for this, just the module but looks different
     const id = window.location.toString().split("/")[
         window.location.toString().split("/").length - 1
     ];

@@ -1,6 +1,6 @@
 async function newFormhandler(event) {
     event.preventDefault();
-
+//pretty much from the module
     const title = document.querySelector("input[name='post-title']").value;
     const post_text = document.querySelector("textarea[name='post-content']").value;
 

@@ -1,3 +1,5 @@
+//for some reason i could not get my head around the models concept. had to get alot of help for it
+
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection.js");
 

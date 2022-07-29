@@ -2,6 +2,8 @@ const router = require("express").Router();
 const { Comment } = require("../../models");
 const withAuth = require("../../utils/auth.js");
 
+//man i hate routes, dont get them but it worked, thanks module
+
 router.get("/", (req, res) => {
     Comment.findAll()
     .then(dbCommentData => res.json(dbCommentData))

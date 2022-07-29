@@ -1,3 +1,5 @@
+//lots of consts. straight from module
+
 const path = require("path");
 const express = require("express");
 const routes = require("./controllers");
@@ -12,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const sess = {
-    secret: "Super secret secret",
+    secret: "secret",
     cookie: {},
     resave: false,
     saveUninitialized: true,
@@ -32,5 +34,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log("Now listening"));
+    
 });
